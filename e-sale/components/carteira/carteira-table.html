@@ -1,0 +1,17 @@
+{{vm.lista}}
+<div class="table-responsive">
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th> Nome </th>
+                <th> Saldo </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="item in vm.lista | orderBy: item.nome" >
+                <td>{{item.nome}}</td>
+                <td>{{item.saldo}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
