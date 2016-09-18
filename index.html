@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="esale">
+    <head>
+        <title>e-sale</title>
+
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet"/>
+
+    </head>
+    <body>
+        <div ng-include="'e-sale/commons/navigation/navigation.html'"></div>
+        
+        <div class="container">
+            <ui-view></ui-view>
+        </div>
+        
+
+        <script src="bower_components/angular/angular.js" /></script>
+        <script src="bower_components/angular-ui-router/release/angular-ui-router.js" /></script>
+        <script src="bower_components/satellizer/dist/satellizer.js" /></script>
+        <script src="bower_components/jquery/dist/jquery.js" /></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.js" /></script>
+        
+        <!-- User: módulo responsável por controlar informações de usuário -->
+        <script src="e-sale/components/user/user.module.js" /></script>
+        <script src="e-sale/components/user/user.controller.js" /></script>
+        <script src="e-sale/components/user/user.factory.js" /></script>
+
+        <!-- Carteira: módulo responsável por controlar dinheiro ganho -->
+        <script src="e-sale/components/carteira/carteira.module.js" /></script>
+        <script src="e-sale/components/carteira/carteira.controller.js" /></script>
+        <script src="e-sale/components/carteira/carteira.factory.js" /></script>
+
+        <!-- Despensas: módulo responsável por controlar dinheiro ganho -->
+        <script src="e-sale/components/despesas/despesas.module.js" /></script>
+        <script src="e-sale/components/despesas/despesas.controller.js" /></script>
+        <script src="e-sale/components/despesas/despesas.factory.js" /></script>
+        
+        <script src="e-sale/app.module.js" ></script>
+        <script src="e-sale/app.route.js" ></script>
+    </body>
+</html>
